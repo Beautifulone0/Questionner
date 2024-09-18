@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Section Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="nav" style="display: none;">
+    <ul>
+      <li><a href="#" data-section="section-one" class="active">Company Overview</a></li>
+      <li><a href="#" data-section="section-two">Project Overview</a></li>
+      <li><a href="#" data-section="section-three">Design and Aesthetics</a></li>
+      <li><a href="#" data-section="section-four">Content</a></li>
+      <li><a href="#" data-section="section-five">Functionality </a></li>
+      <li><a href="#" data-section="section-six">Technical Specifications</a></li>
+      <li><a href="#" data-section="section-seven">Maintenance and Updates</a></li>
+      <li><a href="#" data-section="section-eight">Marketing and Analytics</a></li>
+      <li><a href="#" data-section="section-nine">Additional Information </a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div id="section-one" class="section active">
+      <h2>Company Overview</h2>
+      <p>Enter your company details correctly</p>
+      <form>
+        <div>
+          <label>Company Name:</label>
+          <input type="text" placeholder="e.g. TaureanTech">
+        </div>
+        <div>
+          <label>Contact Person:</label>
+          <input type="text" placeholder="e.g. Paul">
+        </div>
+        <div>
+          <label>Email Address:</label>
+          <input type="email" placeholder="Enter Company Email">
+        </div>
+        <div>
+          <label>Phone Number:</label>
+          <input type="tel" placeholder="+234xxxxxxxx">
+        </div>
+        <div>
+          <label>Company Address:</label>
+          <input type="text" placeholder="Address">
+        </div>
+        <div>
+          <label>Website URL (if applicable):</label>
+          <input type="text" placeholder="e.g. www.taureantech.com">
+        </div>
+        <div>
+          <label for="comment">Describe your company in a few sentences:</label>
+          <textarea name="comments" id="comments" rows="5"></textarea>
+        </div>
+        <div>
+          <label for="client-services">What products or services do you offer?</label>
+          <select id="client-services" name="client-services">
+            <option value="">Select an option</option>
+            <option value="consulting">Consulting</option>
+            <option value="training">Training and Development</option>
+            <option value="marketing">Digital Marketing Services</option>
+            <option value="design">Graphic Design</option>
+            <option value="content-writing">Content Writing and Editing</option>
+            <option value="social-media">Social Media Management</option>
+            <option value="video-production">Video Production</option>
+            <option value="app-development">Mobile App Development</option>
+            <option value="web-development">Web Development</option>
+            <option value="photography">Photography Services</option>
+            <option value="event-planning">Event Planning and Coordination</option>
+            <option value="branding">Branding and Identity Design</option>
+            <option value="public-relations">Public Relations Services</option>
+            <option value="virtual-assistance">Virtual Assistance</option>
+            <option value="financial-advising">Financial Advising</option>
+            <option value="it-support">IT Support and Help Desk</option>
+            <option value="legal-advice">Legal Advice</option>
+            <option value="hr-services">Human Resources Services</option>
+            <option value="custom-software">Custom Software Development</option>
+            <option value="interior-design">Interior Design</option>
+            <option value="architecture">Architecture Services</option>
+            <option value="landscaping">Landscaping Services</option>
+            <option value="accounting">Accounting and Bookkeeping</option>
+            <option value="tax-preparation">Tax Preparation Services</option>
+            <option value="real-estate">Real Estate Services</option>
+            <option value="personal-coaching">Personal Coaching and Mentoring</option>
+            <option value="fitness-training">Fitness Training</option>
+            <option value="nutrition-consulting">Nutrition Consulting</option>
+            <option value="cybersecurity">Cybersecurity Services</option>
+            <option value="data-analysis">Data Analysis</option>
+            <option value="cloud-computing">Cloud Computing Services</option>
+            <option value="software-testing">Software Testing and QA</option>
+            <option value="translation">Translation and Localization</option>
+            <option value="copywriting">Copywriting</option>
+            <option value="email-marketing">Email Marketing</option>
+            <option value="seo-services">SEO Services</option>
+            <option value="app-design">App Design</option>
+            <option value="customer-support">Customer Support</option>
+            <option value="supply-chain-management">Supply Chain Management</option>
+            <option value="procurement">Procurement Services</option>
+            <option value="logistics">Logistics and Shipping</option>
+            <option value="project-management">Project Management</option>
+            <option value="healthcare-consulting">Healthcare Consulting</option>
+            <option value="medical-billing">Medical Billing and Coding</option>
+            <option value="home-cleaning">Home Cleaning Services</option>
+            <option value="property-management">Property Management</option>
+            <option value="energy-consulting">Energy Consulting</option>
+            <option value="waste-management">Waste Management Services</option>
+            <option value="insurance-services">Insurance Services</option>
+            <option value="car-repair">Car Repair and Maintenance</option>
+            <option value="others-specify">Others (Specify)</option>
+          </select>
+        </div>
+        <div>
+          <input id="client-services-other" type="text" placeholder="Others (Specify)" style="display:none;">
+        </div>
+        
+    <button type="button" id="next-3" class="next-btn">Next</button>
+      </form>
+    </div>
+
+    <div id="section-two" class="section">
+      <h2>Project Overview</h2>
+      <form>
+        <div>
+          <label for="primary-purpose">What is the primary purpose of your website?</label>
+          <select name="primary-purpose" id="primary-purpose">
+            <option value="">Select an option</option>
+            <option value="informational">Informational</option>
+            <option value="e-commerce">E-commerce</option>
+            <option value="portfolio">Portfolio</option>
+            <option value="blog">Blog</option>
+            <option value="magazine">Magazine</option>
+            <option value="news-site">News Site</option>
+            <option value="online-store">Online Store</option>
+            <option value="personal-blog">Personal Blog</option>
+            <option value="shopping-cart">Shopping Cart</option>
+            <option value="social-media-platform">Social Media Platform</option>
+            <option value="community-site">Community Site</option>
+            <option value="event-site">Event Site</option>
+            <option value="landing-page">Landing Page</option>
+            <option value="other">Others (Specify)</option>
+          </select>
+        </div>
+        <div>
+          <input id="primary-purpose-other" type="text" placeholder="Others (Specify)" style="display:none;">
+        </div>
+        <div>
+          <label for="target-audience">Who is your target audience?</label>
+          <select id="target-audience" name="target-audience">
+            <option value="">Select an option</option>
+            <option value="small-business-owners">Small Business Owners</option>
+            <option value="startups-entrepreneurs">Startups and Entrepreneurs</option>
+            <option value="non-profits">Non-profit Organizations</option>
+            <option value="corporate-businesses">Corporate Businesses</option>
+            <option value="freelancers">Freelancers</option>
+            <option value="retail-customers">Retail Customers</option>
+            <option value="b2b-companies">B2B (Business to Business) Companies</option>
+            <option value="b2c-companies">B2C (Business to Consumer) Companies</option>
+            <option value="ecommerce-platforms">E-commerce Platforms</option>
+            <option value="educational-institutions">Educational Institutions (Schools, Colleges, Universities)
+            </option>
+            <option value="students">Students</option>
+            <option value="tech-enthusiasts">Tech Enthusiasts</option>
+            <option value="healthcare-professionals">Healthcare Professionals</option>
+            <option value="government-agencies">Government Agencies</option>
+            <option value="media-entertainment">Media and Entertainment Companies</option>
+            <option value="influencers-bloggers">Influencers and Bloggers</option>
+            <option value="professional-services">Professional Services (Consultants, Accountants, Lawyers)
+            </option>
+            <option value="real-estate-agents">Real Estate Agents</option>
+            <option value="travel-tourism">Travel and Tourism Businesses</option>
+            <option value="event-planners">Event Planners</option>
+            <option value="hospitality-restaurants">Hospitality and Restaurants</option>
+            <option value="fitness-enthusiasts">Fitness Enthusiasts and Trainers</option>
+            <option value="parents-families">Parents and Families</option>
+            <option value="artists-designers-creatives">Artists, Designers, and Creatives</option>
+            <option value="local-communities">Local Communities</option>
+            <option value="social-media-users">Social Media Users</option>
+            <option value="financial-institutions">Financial Institutions</option>
+            <option value="manufacturers">Manufacturers</option>
+            <option value="construction-engineering">Construction and Engineering Firms</option>
+            <option value="investors-vcs">Investors and Venture Capitalists</option>
+            <option value="remote-workers">Remote Workers and Digital Nomads</option>
+            <option value="environmental-advocates">Environmental and Sustainability Advocates</option>
+            <option value="tech-companies-developers">Tech Companies and Developers</option>
+            <option value="retail-shoppers">Retail Shoppers</option>
+            <option value="luxury-consumers">Luxury Consumers</option>
+            <option value="elderly-population">Elderly Population</option>
+            <option value="youth-teenagers">Youth and Teenagers</option>
+            <option value="pet-owners">Pet Owners</option>
+            <option value="healthcare-patients">Healthcare Patients</option>
+            <option value="religious-organizations">Religious Organizations</option>
+            <option value="automotive-enthusiasts">Automotive Enthusiasts</option>
+            <option value="fashion-enthusiasts">Fashion Enthusiasts</option>
+            <option value="music-audio-professionals">Music and Audio Professionals</option>
+            <option value="gaming-community">Gaming Community</option>
+            <option value="sports-fans">Sports Fans</option>
+            <option value="homeowners-renters">Homeowners and Renters</option>
+            <option value="legal-professionals">Legal Professionals</option>
+            <option value="beauty-skincare-enthusiasts">Beauty and Skincare Enthusiasts</option>
+            <option value="agriculture-farming">Agriculture and Farming Sector</option>
+            <option value="international-clients">International Clients</option>
+            <option value="others-specify">Others (Specify)</option>
+          </select>
+        </div>
+        <div>
+          <input id="target-audience-other" type="text" placeholder="Others (Specify)" style="display:none;">
+        </div>
+        <div>
+          <label for="main-goals">What are the main goals you want to achieve with this website?</label>
+          <select name="main-goals" id="main-goals">
+            <option value="">Select an option</option>
+            <option value="increase-sales">Increase Sales</option>
+            <option value="generate-leads">Generate Leads</option>
+            <option value="build-brand-awareness">Build Brand Awareness</option>
+            <option value="improve-customer-experience">Improve Customer Experience</option>
+            <option value="grow-revenue">Grow Revenue</option>
+            <option value="attract-new-customers">Attract New Customers</option>
+            <option value="increase-customer- retention">Increase Customer Retention</option>
+            <option value="strengthen-relationships">Strengthen Relationships</option>
+            <option value="increase-profitability">Increase Profitability</option>
+            <option value="achieve-business-objectives">Achieve Business Objectives</option>
+            <option value="others-specify">Others (Specify)</option>
+          </select>
+        </div>
+        <div>
+          <input id="main-goals-other" type="text" placeholder="Others (Specify)" style="display:none;">
+        </div>
+        <div>
+          <label>What is the expected launch date for the website?</label>
+          <input type="date">
+        </div>
+        <div>
+          <label for="budget">What is your budget for this project?</label>
+          <input id="budget" type="number" placeholder="e.g. 500000" step="1000">
+          <select id="currency" name="currency">
+            <option value="ngn">NGN (Naira)</option>
+            <option value="usd">USD (Dollar)</option>
+            <option value="eur">EUR (Euro)</option>
+            <option value="others-specify">Others (Specify)</option>
+          </select>
+          <input id="currency-other" type="text" placeholder="Specify currency" style="display: none;">
+        </div>
+        <button type="button" id="prev-3" class="prev-btn">Previous</button>
+    <button type="button" id="next-3" class="next-btn">Next</button>
+      </form>
+    </div>
+
+    <div id="section-three" class="section">
+      <h2>Design and Aesthetics</h2>
+      <form>
+        <div>
+          <label for="style-theme">Do you have a specific style or theme in mind? </label>
+          <select name="style-theme" id="style-theme">
+            <option value="">Select an option</option>
+            <option value="modern">Modern</option>
+            <option value="minimalist">Minimalist</option>
+            <option value="traditional">Traditional</option>
+            <option value="corporate">Corporate</option>
+            <option value="personal">Personal</option>
+            <option value="others-specify">Others (Specify)</option>
+          </select>
+        </div>
+        <div>
+          <input id="primary-purpose-other" type="text" placeholder="Others (Specify)" style="display:none;">
+        </div>
+        <div>
+          <label for="color-preferences">Are there any color schemes you prefer or want to avoid?</label>
+          <br />
+          <div>
+            <label for="preferred-colors">Preferred Colors:</label>
+            <input id="preferred-colors" type="text" placeholder="e.g. Red, Blue, Green">
+          </div>
+          <div>
+            <label for="avoided-colors">Colors to Avoid:</label>
+            <input id="avoided-colors" type="text" placeholder="e.g. Red, Blue, Green">
+          </div>
+        </div>
+
+        <div>
+          <label>Do you have brand guidelines, including logos, fonts, and color codes?</label>
+          <div class="radio-group">
+            <input type="radio" id="no" name="brand-guidelines" value="no">
+            <label for="no">No</label>
+          </div>
+          <div class="radio-item">
+            <input type="radio" id="yes" name="brand-guidelines" value="yes">
+            <label for="yes">Yes</label>
+          </div>
+          <br />
+          <div>
+            <label for="brand-guidelines-upload">Upload Brand Guidelines (PDF, JPG, PNG):</label>
+            <input type="file" id="brand-guidelines-upload" accept=".pdf,.jpg,.png,.doc">
+          </div>
+        </div>
+          <br />
+        <div>
+          <label for="favorite-websites">Please list any websites you like and what you like about them:</label>
+          <div id="websites-container">
+            <div class="website-entry">
+              <label for="website-name-1">Website Name:</label>
+              <input id="website-name-1" type="text" placeholder="e.g. Google">
+            </div>
+            <div class="website-entry">
+              <label for="website-features-1">Features You Like:</label>
+              <input id="website-features-1" type="text" placeholder="e.g. Easy to navigate, Fast loading">
+            </div>
+            <div class="website-entry">
+              <label for="website-design-1">Design Preferences:</label>
+              <input id="website-design-1" type="text" placeholder="e.g. Clean, Modern">
+            </div>
+          </div>
+        </div>
+        <div>
+          <label> Please list any websites you dislike and what you dislike about them:</label>
+          <div id="disliked-websites-container">
+            <div class="website-entry">
+              <label for="website-name-2">Website Name:</label>
+              <input id="website-name-2" type="text" placeholder="e.g. Yahoo">
+            </div>
+            <div class="website-entry">
+              <label for="website-features-2">Features You Dislike:</label>
+              <input id="website-features-2" type="text" placeholder="e.g. Slow loading, Not user-friendly">
+            </div>
+            <div class="website-entry">
+              <label for="website-design-2">Design Preferences:</label>
+              <input id="website-design-2" type="text" placeholder="e.g. Cluttered, Uninspired">
+            </div>
+          </div>
+        </div>
+        <button type="button" id="prev-3" class="prev-btn">Previous</button>
+    <button type="button" id="next-3" class="next-btn">Next</button>
+      </form>
+    </div>
+
+    <div id="section-four" class="section">
+      <h2>Content</h2>
+      <form>
+        <div>
+          <label>Do you have existing content that will be used, or will new content need to be created?</label>
+          <div class="radio-group">
+            <input type="radio" id="existing-content" name="content" value="existing-content">
+            <label for="existing-content">Existing Content</label>
+
+            <input type="radio" id="new-content" name="content" value="new-content">
+            <label for="new-content">New Content</label>
+
+            <input type="radio" id="existing-and-new-content" name="content" value="existing-and-new-content">
+            <label for="existing-and-new-content">Existing and New Content</label>
+          </div>
+          <div id="upload-section" style="display: none;">
+            <h3>Upload Existing Content</h3>
+            <label for="content-upload">Select files to upload:</label>
+            <input type="file" id="content-upload" name="content-upload[]" multiple>
+            <p>Accepted file types: .pdf, .doc, .docx, .jpg, .jpeg, .png</p>
+          </div>
+        </div>
+        <div>
+          <label for="copywriting-assistance">Will you need assistance with copywriting or content
+            creation?</label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="copywriting" value="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" name="copywriting" value="no">
+            <label for="no">No</label>
+
+            <input type="radio" id="unsure" name="copywriting" value="unsure">
+            <label for="unsure">Unsure</label>
+          </div>
+
+          <div id="copywriting-help" style="display: none;">
+            <h4>Copywriting Help</h4>
+            <p>We're here to help you create engaging and informative content for your website. We can guide you
+              through the process, provide feedback, and help you improve your content. Feel free to reach out if
+              you need any assistance.</p>
+          </div>
+        </div>
+
+        <div>
+          <label for="">How many pages do you anticipate your website will have? (e.g., Home, About, Services,
+            Blog, Contact, etc.)</label>
+          <input type="number" id="page-count" name="page-count">
+        </div>
+
+        <div>
+          <label for="blog-section">Will your website include a blog or news section?</label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="blog-section" value="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" name="blog-section" value="no">
+            <label for="no">No</label>
+
+            <input type="radio" id="unsure" name="blog-section" value="unsure">
+            <label for="unsure">Unsure</label>
+          </div>
+
+          <div id="blog-help" style="display: none;">
+            <h4>Blog Help</h4>
+            <p>We're here to help you create engaging and informative content for your website's blog section. We
+              can guide you through the process, provide feedback, and help you improve your content. Feel free to
+              reach out if you need any assistance.</p>
+          </div>
+        </div>
+        <button type="button" id="prev-3" class="prev-btn">Previous</button>
+    <button type="button" id="next-3" class="next-btn">Next</button>
+      </form>
+    </div>
+
+    <div id="section-five" class="section">
+      <h2>Functionality</h2>
+      <form>
+        <div>
+          <label for="">Do you need e-commerce functionality?</label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="e-commerce" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="e-commerce" value="no">
+            <label for="no">No</label>
+          </div>
+          <label for="Functionality-requirements">If yes, please describe your requirements</label>
+          <select name="Functionality-requirements" id=" Functionality-requirements">
+            <option value="">Select an option</option>
+            <option value="product-categories">Product Categories</option>
+            <option value="payment-gateways">Payment Gateways</option>
+            <option value="shipping-options">Shipping Options</option>
+            <option value="returns-and-refunds">Returns and Refunds</option>
+            <option value="customer-service">Customer Service</option>
+          </select>
+        </div>
+        <div>
+          <label for="specific-integrations">Do you require any specific integrations?</label>
+          <select name="specific-integrations" id="specific-integrations">
+            <option value="">Select an option</option>
+            <option value="crm">CRM</option>
+            <option value="social-media">Social Media</option>
+            <option value="email-marketing">Email Marketing</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="">Do you need user login or membership functionality?</label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="user-login" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="user-login" value="no">
+            <label for="no">No</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="">Do you need multi-language support?</label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="multi-language" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="multi-language" value="no">
+            <label for="no">No</label>
+          </div>
+        </div>
+        <button type="button" id="prev-3" class="prev-btn">Previous</button>
+    <button type="button" id="next-3" class="next-btn">Next</button>
+      </form>
+    </div>
+
+    <div id="section-six" class="section">
+      <h2>Technical Specifications</h2>
+      <form>
+        <div>
+          <label for="">Do you have a preferred content management system (CMS)? </label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="CMS" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="CMS" value="no">
+            <label for="no">No</label>
+          </div>
+          <label for="preferred-cms">If yes select</label>
+          <select name="preferred-cms" id="preferred-cms">
+            <option value="">Select an option</option>
+            <option value="wordpress">WordPress</option>
+            <option value="joomla">Joomla</option>
+            <option value="drupal">Drupal</option>
+            <option value="custom-cms">Custom CMS</option>
+          </select>
+        </div>
+        <div>
+          <label for="domain-name">Do you have a domain name registered?</label>
+          <div class="radio-group">
+            <input type="radio" id="domain-yes" name="domain-name" value="yes">
+            <label for="domain-yes">Yes</label>
+
+            <input type="radio" id="domain-no" name="domain-name" value="no">
+            <label for="domain-no">No</label>
+          </div>
+
+          <div id="domain-details" style="display: none;">
+            <h3>Domain Name Details</h3>
+            <label for="domain-name-provider">Domain Name Provider</label>
+            <input type="text" id="domain-name-provider" name="domain-name-provider">
+
+            <label for="domain-name-registration-date">Registration Date</label>
+            <input type="date" id="domain-name-registration-date" name="domain-name-registration-date">
+
+            <label for="domain-name-expiration-date">Expiration Date</label>
+            <input type="date" id="domain-name-expiration-date" name="domain-name-expiration-date">
+
+            <label for="domain-name-renewal-date">Renewal Date</label>
+            <input type="date" id="domain-name-renewal-date" name="domain-name-renewal-date">
+
+            <label for="domain-name-transfer-date">Transfer Date (if applicable)</label>
+            <input type="date" id="domain-name-transfer-date" name="domain-name-transfer-date">
+
+            <label for="domain-name-transfer-status">Transfer Status (if applicable)</label>
+            <input type="text" id="domain-name-transfer-status" name="domain-name-transfer-status">
+          </div>
+        </div>
+
+        <div>
+          <label for="">Do you need support with SEO (Search Engine Optimization)?</label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="seo" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="seo" value="no">
+            <label for="no">No</label>
+          </div>
+        </div>
+        <button type="button" id="prev-3" class="prev-btn">Previous</button>
+    <button type="button" id="next-3" class="next-btn">Next</button>
+      </form>
+    </div>
+
+    <div id="section-seven" class="section">
+      <h2>Maintenance and Updates</h2>
+      <form>
+        <div>
+          <label for="">Who will be responsible for updating and maintaining the website after launch?</label>
+          <div class="radio-group">
+            <input type="radio" id="team" name="maintenance-responsibility" value="team">
+            <label for="team">TaureanTech</label>
+            <input type="radio" id="individual" name="maintenance-responsibility" value="individual">
+            <label for="individual">Company Team</label>
+          </div>
+        </div>
+        <div>
+          <label for="">Do you require training for your team to manage the website?</label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="training" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="training" value="no">
+            <label for="no">No</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="">Would you be interested in ongoing maintenance and support services?</label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="maintenance-services" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="maintenance-services" value="no">
+            <label for="no">No</label>
+          </div>
+        </div>
+        <button type="button" id="prev-3" class="prev-btn">Previous</button>
+    <button type="button" id="next-3" class="next-btn">Next</button>
+      </form>
+    </div>
+
+    <div id="section-eight" class="section">
+      <h2>Marketing and Analytics</h2>
+      <form>
+        <div>
+          <label for="">Do you have any existing marketing strategies or tools in place? (e.g., email marketing,
+            social media, PPC)</label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="existing-marketing-tools" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="existing-marketing-tools" value="no">
+            <label for="no">No</label>
+          </div>
+        </div>
+        <div>
+          <label for="">Do you need integration with any analytics tools? (e.g., Google Analytics)</label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="analytics" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="analytics" value="no">
+            <label for="no">No</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="">What are your key performance indicators (KPIs) for the website?</label>
+          <textarea name="kpis" id="kpis" cols="30" rows="5"></textarea>
+        </div>
+        <button type="button" id="prev-3" class="prev-btn">Previous</button>
+    <button type="button" id="next-3" class="next-btn">Next</button>
+      </form>
+    </div>
+
+    <div id="section-nine" class="section">
+      <h2>Additional Information</h2>
+      <form>
+        <div>
+          <label for="">Are there any specific challenges or pain points you currently face with your existing
+            website?</label>
+          <textarea name="challenges" id="challenges" cols="30" rows="5"></textarea>
+        </div>
+        <div>
+          <label for="">Are there any other services you might be interested in? (e.g., branding, graphic design,
+            social media management)</label>
+          <div class="radio-group">
+            <input type="radio" id="yes" name="other-services" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="other-services" value="no">
+            <label for="no">No</label>
+          </div>
+          <label for="other-services">If yes select</label>
+          <select name="other-services" id="other-services">
+            <option value="">Select an option</option>
+            <option value="branding">Branding</option>
+            <option value="graphic-design">Graphic Design</option>
+            <option value="social-media-management">Social Media Management</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="">Do you have any other comments or requirements not covered by this questionnaire?</label>
+          <textarea name="additional-comments" id="additional-comments" cols="30" rows="5"></textarea>
+        </div>
+        <button type="button" id="prev-9" class="prev-btn">Previous</button>
+        <button type="submit" id="submit-button">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html
